@@ -1,0 +1,51 @@
+/*компиляция стилей*/
+$accent: #d7b399; /*цвет*/
+$dark: #212121; /*цвет*/
+$light: #f9f6f1; /*цвет*/
+$gray: #cbcfd4; /*цвет*/
+$light-gray: #f4f4f4; /*цвет*/
+$dark-gray: #8d8d8d; /*цвет*/
+$important: #d84033; /*цвет*/
+
+body {
+    font-family: 'Montserrat', sans-serif;
+}
+.page-light {
+  background-color: $light;
+}
+.wrapper {
+  max-width: 1110px;
+  margin: 0 auto; /*центровка*/
+}
+.header {
+  display: flex;
+  justify-content: space-between; /*растянуть элементы по краям */
+  align-items: center; /*центровка элементы по центру блока */
+}
+.nav {
+  display: flex;
+  list-style-type: none; /*убирает точки li*/
+  padding-left: 0;
+   &-item {
+      margin-left:52px; /*(&-это nav)(item пишется внутри блока "nav")*/
+  }
+  &-link {
+      color: $dark;  /*цвет*/
+      text-decoration: none; /*убирает подчёркивание "элемента a"*/
+  }
+}
+.cart {
+    background-image: url("../svg/korzina.svg");
+    padding-left: 50px;
+    display: block;
+    width: 30px;
+    height: 30px;
+    background-repeat:no-repeat; /*убрать повторения картинки */
+    &-count {
+        background-color:$accent;
+        color:#fff;
+        font-size: 12px;
+        font-weight: 700;
+        padding: 10px 15px;
+    }
+}

@@ -1,0 +1,76 @@
+@charset "UTF-8";
+/*компиляция стилей*/
+/*цвет*/
+/*цвет*/
+/*цвет*/
+/*цвет*/
+/*цвет*/
+/*цвет*/
+/*цвет*/
+body {
+  font-family: 'Montserrat', sans-serif;
+}
+
+.page-light {
+  background-color: #f9f6f1;
+}
+
+.wrapper {
+  max-width: 1110px;
+  margin: 0 auto;
+  /*центровка*/
+}
+
+.header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  /*растянуть элементы по краям */
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  /*центровка элементы по центру блока */
+}
+
+.nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  list-style-type: none;
+  /*убирает точки li*/
+  padding-left: 0;
+}
+
+.nav-item {
+  margin-left: 52px;
+  /*(&-это nav)(item пишется внутри блока "nav")*/
+}
+
+.nav-link {
+  color: #212121;
+  /*цвет*/
+  text-decoration: none;
+  /*убирает подчёркивание "элемента a"*/
+}
+
+.cart {
+  background-image: url("../svg/korzina.svg");
+  padding-left: 50px;
+  display: block;
+  width: 30px;
+  height: 30px;
+  background-repeat: no-repeat;
+  /*убрать повторения картинки */
+}
+
+.cart-count {
+  background-color: #d7b399;
+  color: #fff;
+  font-size: 12px;
+  font-weight: 700;
+  padding: 10px 15px;
+}
+/*# sourceMappingURL=style.css.map */
