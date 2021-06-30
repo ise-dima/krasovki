@@ -8,7 +8,7 @@ $dark-gray: #8d8d8d; /*цвет*/
 $important: #d84033; /*цвет*/
 
 body {
-    font-family: 'Montserrat', sans-serif;
+  font-family: "Montserrat", sans-serif;
 }
 .page-light {
   background-color: $light;
@@ -26,26 +26,30 @@ body {
   display: flex;
   list-style-type: none; /*убирает точки li*/
   padding-left: 0;
-   &-item {
-      margin-left:52px; /*(&-это nav)(item пишется внутри блока "nav")*/
+  &-item {
+    margin-left: 52px; /*(&-это nav)(item пишется внутри блока "nav")*/
   }
   &-link {
-      color: $dark;  /*цвет*/
-      text-decoration: none; /*убирает подчёркивание "элемента a"*/
+    color: $dark; /*цвет*/
+    text-decoration: none; /*убирает подчёркивание "элемента a"*/
   }
 }
 .cart {
-    background-image: url("../svg/korzina.svg");
-    padding-left: 50px;
+  background-image: url("../svg/korzina.svg");
+  padding-left: 45px;
+  display: block;
+  width: 30px;
+  height: 30px;
+  background-repeat: no-repeat; /*убрать повторения картинки */
+  background-position: 0 center; /*центровка блока по центру (по Х-0 и по Y-center)*/
+  &-count {
+    background-image: url("../svg/cart-bg.svg");
+    background-repeat: no-repeat; /*убрать повторения картинки */
+    background-position:0 center; /*центровка блока по центру (по Х-0 и по Y-center)*/
+    color: #fff;
+    font-size: 12px;
+    font-weight: 700;
+    padding: 14px 24px;
     display: block;
-    width: 30px;
-    height: 30px;
-    background-repeat:no-repeat; /*убрать повторения картинки */
-    &-count {
-        background-color:$accent;
-        color:#fff;
-        font-size: 12px;
-        font-weight: 700;
-        padding: 10px 15px;
-    }
+  }
 }

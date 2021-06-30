@@ -8,7 +8,7 @@
 /*цвет*/
 /*цвет*/
 body {
-  font-family: 'Montserrat', sans-serif;
+  font-family: "Montserrat", sans-serif;
 }
 
 .page-light {
@@ -58,19 +58,26 @@ body {
 
 .cart {
   background-image: url("../svg/korzina.svg");
-  padding-left: 50px;
+  padding-left: 45px;
   display: block;
   width: 30px;
   height: 30px;
   background-repeat: no-repeat;
   /*убрать повторения картинки */
+  background-position: 0 center;
+  /*центровка блока по центру (по Х-0 и по Y-center)*/
 }
 
 .cart-count {
-  background-color: #d7b399;
+  background-image: url("../svg/cart-bg.svg");
+  background-repeat: no-repeat;
+  /*убрать повторения картинки */
+  background-position: 0 center;
+  /*центровка блока по центру (по Х-0 и по Y-center)*/
   color: #fff;
   font-size: 12px;
   font-weight: 700;
-  padding: 10px 15px;
+  padding: 14px 24px;
+  display: block;
 }
 /*# sourceMappingURL=style.css.map */
