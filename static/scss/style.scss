@@ -10,24 +10,36 @@ $important: #d84033; /*цвет*/
 body {
   font-family: "Montserrat", sans-serif;
 }
-.page-light {
-  background-color: $light;
+.page {
+  padding-top: 100px;
+  padding-bottom: 100px;
+  &-light {
+    background-color: $light;
+  }
+  &-dark {
+    background-color: $dark;
+  }
 }
+
 .wrapper {
   max-width: 1110px;
   margin: 0 auto; /*центровка*/
+  padding-left: 15px;
+  padding-right: 15px;
 }
 .header {
   display: flex;
   justify-content: space-between; /*растянуть элементы по краям */
   align-items: center; /*центровка элементы по центру блока */
+  padding-bottom: 26px;
+  padding-top: 29px;
 }
 .nav {
   display: flex;
   list-style-type: none; /*убирает точки li*/
   padding-left: 0;
   &-item {
-    margin-left: 52px; /*(&-это nav)(item пишется внутри блока "nav")*/
+    margin-right: 52px; /*(&-это nav)(item пишется внутри блока "nav")*/
   }
   &-link {
     color: $dark; /*цвет*/
@@ -45,11 +57,102 @@ body {
   &-count {
     background-image: url("../svg/cart-bg.svg");
     background-repeat: no-repeat; /*убрать повторения картинки */
-    background-position:0 center; /*центровка блока по центру (по Х-0 и по Y-center)*/
+    background-position: 0 center; /*центровка блока по центру (по Х-0 и по Y-center)*/
     color: #fff;
     font-size: 12px;
     font-weight: 700;
     padding: 14px 24px;
     display: block;
+  }
+}
+.btn {
+  background-color: $accent;
+  color: #fff;
+  font-size: 16px;
+  text-transform: uppercase; /*все буквы заглавные*/
+  text-decoration: none; /*убирает подчёркивание "элемента a"*/
+  padding: 15px 22px;
+  &-xs {
+    padding: 5px 22px;
+  }
+}
+.main {
+  display: flex;
+  justify-content: space-between;
+  &-item {
+    flex: 0 0 50%;
+  }
+}
+.sale {
+  &-description {
+    font-size: 30px;
+    letter-spacing: -2, 0px;
+  }
+  &-title {
+    font-size: 55px;
+    font-weight: 700;
+    margin-top: 30px;
+    margin-bottom: 48px;
+  }
+}
+.box {
+  position: relative;
+  &-price {
+    position: absolute;
+    top: 42px;
+    right: 0;
+    text-align: right;
+    &-old {
+      font-size: 24px;
+      font-weight: 700;
+      margin-right: 122px;
+    }
+    &-new {
+      font-size: 35px;
+      font-weight: 700;
+      color: $important;
+      margin-top: 15px;
+      margin-right: 128px;
+    }
+  }
+}
+.notice {
+  text-align: center;
+  color: #fff;
+  padding: 50px 0;
+  &-title {
+    font-size: 30px;
+    text-transform: uppercase;
+    span {
+      font-weight: 700;
+    }
+  }
+}
+.collection {
+  display: flex;
+  justify-content: space-between;
+ 
+  &-item {
+    padding: 50px 0;
+    flex: 0 0 50%; /*какая ширина блока*/
+    background-repeat: no-repeat; /*убрать повторения картинки */
+    background-position:calc(100% - 50px);
+   /* background-position: right bottom;место расположения картинки*/
+    background-size: 190px 171px; /*размер картинки*/
+  }
+  &-man {
+    background-image: url("/static/images/rectangle3.1.png");  
+  }
+  &-woman{
+    background-image: url("/static/images/rectangle3.2.png");   
+  }
+  &-title {
+    font-size: 24px;
+    font-weight: 300;
+    text-transform: uppercase;
+  }
+  &-description {
+    font-size: 16px;
+    margin-bottom: 30px;
   }
 }
