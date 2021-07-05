@@ -65,6 +65,10 @@ body {
     display: block;
   }
 }
+.title-h2 {
+  text-align: center; /*центровка текста по центру */
+  font-size: 36px;
+}
 .btn {
   background-color: $accent;
   color: #fff;
@@ -78,7 +82,7 @@ body {
 }
 .main {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-between; /*растянуть элементы по краям */
   &-item {
     flex: 0 0 50%;
   }
@@ -130,13 +134,12 @@ body {
 }
 .collection {
   display: flex;
-  justify-content: space-between;
- 
+  justify-content: space-between; /*растянуть элементы по краям */
   &-item {
     padding: 50px 0;
-    flex: 0 0 50%; /*какая ширина блока*/
+    flex: 0 0 50%; /* ширина блока*/
     background-repeat: no-repeat; /*убрать повторения картинки */
-    background-position:calc(100% - 50px);
+    background-position:calc(100% - 50px); /*сдвиг картинки на право относительно 100%*/
    /* background-position: right bottom;место расположения картинки*/
     background-size: 190px 171px; /*размер картинки*/
   }
@@ -154,5 +157,30 @@ body {
   &-description {
     font-size: 16px;
     margin-bottom: 30px;
+  }
+}
+.product {
+  display: flex;
+  justify-content: space-between; /*растянуть элементы по краям */
+  text-align: center;
+  &-item {
+    position: relative;
+    &:before,&:after {
+      content: " ";
+      display: block;
+      width: 100%;
+      height: 25px;
+    }
+    &:before {
+      background-image: url("../static/svg/item-top.svg");
+    }
+  }
+  &-title {
+   font-weight:600; /*работает с гугловским шрифтом*/
+  }
+  &-price {
+    color:$accent;
+    font-size: 18px;
+    font-weight: 700;
   }
 }

@@ -94,6 +94,12 @@ body {
   display: block;
 }
 
+.title-h2 {
+  text-align: center;
+  /*центровка текста по центру */
+  font-size: 36px;
+}
+
 .btn {
   background-color: #d7b399;
   color: #fff;
@@ -116,6 +122,7 @@ body {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  /*растянуть элементы по краям */
 }
 
 .main-item {
@@ -183,6 +190,7 @@ body {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  /*растянуть элементы по краям */
 }
 
 .collection-item {
@@ -190,10 +198,11 @@ body {
   -webkit-box-flex: 0;
       -ms-flex: 0 0 50%;
           flex: 0 0 50%;
-  /*какая ширина блока*/
+  /* ширина блока*/
   background-repeat: no-repeat;
   /*убрать повторения картинки */
   background-position: calc(100% - 50px);
+  /*сдвиг картинки на право относительно 100%*/
   /* background-position: right bottom;место расположения картинки*/
   background-size: 190px 171px;
   /*размер картинки*/
@@ -216,5 +225,42 @@ body {
 .collection-description {
   font-size: 16px;
   margin-bottom: 30px;
+}
+
+.product {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  /*растянуть элементы по краям */
+  text-align: center;
+}
+
+.product-item {
+  position: relative;
+}
+
+.product-item:before, .product-item:after {
+  content: " ";
+  display: block;
+  width: 100%;
+  height: 25px;
+}
+
+.product-item:before {
+  background-image: url("../static/svg/item-top.svg");
+}
+
+.product-title {
+  font-weight: 600;
+  /*работает с гугловским шрифтом*/
+}
+
+.product-price {
+  color: #d7b399;
+  font-size: 18px;
+  font-weight: 700;
 }
 /*# sourceMappingURL=style.css.map */
