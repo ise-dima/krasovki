@@ -115,6 +115,20 @@ body {
   padding: 5px 22px;
 }
 
+.btn-center {
+  display: block;
+  text-align: center;
+  /*центровка текста по центру внутри блока*/
+  max-width: 200px;
+  /*максимальный размер блока*/
+  margin: 0 auto;
+  /*центровка по центру*/
+}
+
+.btn span {
+  margin-right: 15px;
+}
+
 .main {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -236,21 +250,38 @@ body {
           justify-content: space-between;
   /*растянуть элементы по краям */
   text-align: center;
+  margin-top: 30px;
+  margin-bottom: 30px;
 }
 
 .product-item {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 24%;
+          flex: 0 0 24%;
+  /*ширина блока*/
   position: relative;
+  /*(&:before,&:after -это элементы по краям картинках)*/
 }
 
 .product-item:before, .product-item:after {
-  content: " ";
+  content: "";
   display: block;
+  /*(это блок по краям картинке)*/
   width: 100%;
+  /*ширина блока*/
   height: 25px;
+  /*высота блока*/
+  background-size: cover;
+  background-repeat: no-repeat;
+  /*убрать повторения картинки */
 }
 
 .product-item:before {
-  background-image: url("../static/svg/item-top.svg");
+  background-image: url("/static/svg/item-top.svg");
+}
+
+.product-item:after {
+  background-image: url("/static/svg/item-botton.svg");
 }
 
 .product-title {
