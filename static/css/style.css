@@ -112,7 +112,7 @@ body {
 }
 
 .btn-xs {
-  padding: 5px 22px;
+  padding: 4px 24px;
 }
 
 .btn-center {
@@ -185,16 +185,21 @@ body {
 .notice {
   text-align: center;
   color: #fff;
-  padding: 50px 0;
+  padding: 50px 0 36px;
 }
 
 .notice-title {
   font-size: 30px;
   text-transform: uppercase;
+  font-weight: 400;
 }
 
 .notice-title span {
   font-weight: 700;
+}
+
+.notice-description {
+  font-size: 21px;
 }
 
 .collection {
@@ -208,14 +213,14 @@ body {
 }
 
 .collection-item {
-  padding: 50px 0;
+  padding: 35px 0px 110px;
   -webkit-box-flex: 0;
       -ms-flex: 0 0 50%;
           flex: 0 0 50%;
   /* ширина блока*/
   background-repeat: no-repeat;
   /*убрать повторения картинки */
-  background-position: calc(100% - 50px);
+  background-position: calc(100% - 30px);
   /*сдвиг картинки на право относительно 100%*/
   /* background-position: right bottom;место расположения картинки*/
   background-size: 190px 171px;
@@ -293,5 +298,54 @@ body {
   color: #d7b399;
   font-size: 18px;
   font-weight: 700;
+}
+
+.footer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 30px 0;
+}
+
+.footer-logo {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 40%;
+          flex: 0 0 40%;
+}
+
+.footer-nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 60%;
+          flex: 0 0 60%;
+  color: #fff;
+}
+
+.footer-list {
+  list-style-type: none;
+  padding-left: 0;
+}
+
+.footer-list-title {
+  font-size: 10px;
+  font-weight: 700;
+}
+
+.footer-list-item {
+  margin-bottom: 10px;
+}
+
+.footer-list-link {
+  color: #cbcfd4;
+  text-decoration: none;
+  font-size: 14px;
 }
 /*# sourceMappingURL=style.css.map */
