@@ -232,6 +232,24 @@ body {
       color:$gray;
       text-decoration: none;
       font-size: 14px;
+      &-vk {
+        text-decoration: none;
+        background-image: url("/static/svg/vk.svg");
+        background-repeat: no-repeat;
+        padding-left: 25px
+      }
+      &-facebook {
+        text-decoration: none;
+        background-image: url("/static/svg/Facebook.svg");
+        background-repeat: no-repeat;
+        padding-left: 25px
+      }
+      &-instagram {
+        text-decoration: none;
+        background-image: url("/static/svg/instagram.svg");
+        background-repeat: no-repeat;
+        padding-left: 25px
+      }
     }
   }
 }

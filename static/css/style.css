@@ -348,4 +348,25 @@ body {
   text-decoration: none;
   font-size: 14px;
 }
+
+.footer-list-link-vk {
+  text-decoration: none;
+  background-image: url("/static/svg/vk.svg");
+  background-repeat: no-repeat;
+  padding-left: 25px;
+}
+
+.footer-list-link-facebook {
+  text-decoration: none;
+  background-image: url("/static/svg/Facebook.svg");
+  background-repeat: no-repeat;
+  padding-left: 25px;
+}
+
+.footer-list-link-instagram {
+  text-decoration: none;
+  background-image: url("/static/svg/instagram.svg");
+  background-repeat: no-repeat;
+  padding-left: 25px;
+}
 /*# sourceMappingURL=style.css.map */
