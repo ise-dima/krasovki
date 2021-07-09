@@ -343,30 +343,33 @@ body {
   margin-bottom: 10px;
 }
 
+.footer-list-item-vk {
+  background-image: url("/static/svg/vk.svg");
+  background-repeat: no-repeat;
+  /*убрать повторения картинки */
+  padding-left: 28px;
+  line-height: 25px;
+}
+
+.footer-list-item-fb {
+  background-image: url("/static/svg/Facebook.svg");
+  background-repeat: no-repeat;
+  /*убрать повторения картинки */
+  padding-left: 28px;
+  line-height: 25px;
+}
+
+.footer-list-item-inst {
+  background-image: url("/static/svg/instagram.svg");
+  background-repeat: no-repeat;
+  /*убрать повторения картинки */
+  padding-left: 28px;
+  line-height: 25px;
+}
+
 .footer-list-link {
   color: #cbcfd4;
   text-decoration: none;
   font-size: 14px;
-}
-
-.footer-list-link-vk {
-  text-decoration: none;
-  background-image: url("/static/svg/vk.svg");
-  background-repeat: no-repeat;
-  padding-left: 25px;
-}
-
-.footer-list-link-facebook {
-  text-decoration: none;
-  background-image: url("/static/svg/Facebook.svg");
-  background-repeat: no-repeat;
-  padding-left: 25px;
-}
-
-.footer-list-link-instagram {
-  text-decoration: none;
-  background-image: url("/static/svg/instagram.svg");
-  background-repeat: no-repeat;
-  padding-left: 25px;
 }
 /*# sourceMappingURL=style.css.map */
