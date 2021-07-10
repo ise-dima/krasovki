@@ -230,18 +230,22 @@ body {
       &-vk {
         background-image: url("/static/svg/vk.svg");
         background-repeat: no-repeat; /*убрать повторения картинки */
+        background-position-y:6px;
         padding-left: 28px;
         line-height: 25px;
+        align-items: center;
       }
       &-fb {
         background-image: url("/static/svg/Facebook.svg");
         background-repeat: no-repeat; /*убрать повторения картинки */
+        background-position-y:5px;
         padding-left: 28px;
         line-height: 25px;
       }
       &-inst {
         background-image: url("/static/svg/instagram.svg");
         background-repeat: no-repeat; /*убрать повторения картинки */
+        background-position-y:5px;
         padding-left: 28px;
         line-height: 25px;
       }
